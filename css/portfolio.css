@@ -1,14 +1,30 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    text-align: justify;
+    font-family: 'Quicksand';
 }
-html{
-    box-sizing: border-box;
-}
-body{
-	font-family: 'Quicksand' sans-serif;
 
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+main {
+    margin: 0 10svw;
+}
+
+footer {
+    background-color: #000;
+    height: 5em;
+}
+
+p {
+    tab-size: 5px;
+}
+
+#welcome-message {
+    padding: 4px, 30px;
+    tab-size: 10px;
 }
 
 .mrs-saint-delafield-regular {
@@ -22,7 +38,6 @@ body{
     grid-template-row: [image] .25fr 
         [text]1fr [end] 200px;
     grid-template-column: [nav] .5fr;
-    
     
 }
 #services li{
@@ -51,7 +66,7 @@ body{
     left: 50%; /* Position the text horizontally centered */
     transform: translate(-50%, -50%); /* Adjust the position to perfectly center the text */
     color: beige; /* Text color */
-     font-family: "Mrs Saint Delafield", cursive; /* The font you want to use */
+    font-family: "Mrs Saint Delafield", cursive; /* The font you want to use */
     font-size: 5rem; /* Adjust text size */
     font-weight: bold; /* Make the text bold */
     text-align: center; /* Center the text */
@@ -81,7 +96,6 @@ nav li {
 	text-align: center;
 }
 
-}
 nav li ul {
 	background-color: inherit;
 	display: none;
@@ -104,20 +118,16 @@ nav li:hover ul {
 	display: n;
 }
 
-@media screen and (min-width: 800px) {
-	nav>ul{
-	
-	}
-}
 nav li ul {
 	position: absolute;
 }
 
-ul{
+ul {
 	list-style-type: none;
 	display: grid;
 	grid-auto-flow: column;
 }
+
 header h1 {
     text-align: center;
     font-family: 'Quicksand', sans-serif;
@@ -125,64 +135,74 @@ header h1 {
     margin-top: 20px;
 }
 
-body {
-    font-family: 'Quicksand', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-p {
-    margin: 20px;
-    text-align: justify; 
-}
-
 h1 {
     text-align: center;
     margin-top: 20px;
 }
-.bio-box{
+
+.bio-box {
     display: flex;        
-  flex-direction: row;   
-  align-items: center;
-}
-.text {
-  margin-right: 10px; 
+    flex-direction: row;   
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.work-experience ul {
+.bio-box img {
     display: flex;
-    padding-left: 30%;
-    background-color: lightgoldenrod yellow;
- 
+    max-width: 40%;
+    border-radius: 5px;
+    box-shadow: 0 0 .1svw .1svw lightgoldenrodyellow;
 }
-h2{
+
+#bio {
+    display: flex;
+    padding: auto;
+    max-width: 40%;
+}
+
+.resume {
+    display: block;
+    justify-self: center;
+}
+
+h2 {
     text-align: center;
 }
 
-.skills ul{
-    display:flex;
-    margin-top: 20%;
-    padding-left: 30%
-    
+.resume ul{
+    display: block;
 }
+
+.resume li {
+    list-style: circle;
+}
+
+.pdf {
+    display: flex;
+    justify-self: center;
+    background-color: lightgoldenrodyellow;
+    padding: 10px 20px;
+    margin: 5svw;
+    border-radius: 5px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.pdf:hover {
+    background-color: goldenrod;
+    cursor: pointer;
+}
+
+.pdf:active {
+    background-color: darkgoldenrod;
+}
+
 .responsive-image{
     max-width: 100%; 
     height: auto;    
     display: block; }
 * {
     box-sizing: border-box; /* Helps with layout consistency */
-}
-
-html {
-    font-size: 100%; /* Sets the base font size for better scaling */
-}
-
-body {
-    margin: 0;
-    padding: 0;
-
 }
 
 /* Makes the layout fluid */
@@ -207,12 +227,9 @@ img {
     }
 }
 
-@media (max-width: 480px) {
-    html {
-        font-size: 80%; /* Adjust font size further for mobile screens */
-    }
+.example-image {
+    max-width: 30%;
+    justify-self: center;
+    border-radius: 5px;
+    box-shadow: 0 0 .1svw .1svw lightgoldenrodyellow;
 }
-#banner-text{
-    font-family: "Mrs Saint Delafield", cursive, sans-serif;
-}
-
